@@ -1,1 +1,3 @@
+"""JUEGO DEL AHORCADO
 
+"""

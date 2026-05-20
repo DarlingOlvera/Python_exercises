@@ -126,3 +126,14 @@ print(validar_email("usuario@gmail.com"))     # True
 print(validar_email("user.name+tag@co.mx"))   # True
 print(validar_email("sin_arroba.com"))         # False
 print(validar_email("@dominio.com"))           # False
+
+
+def verificar_cp(cp):
+    patron = r'^([a-zA-Z0-9]{2})[0-9]{4}$'
+
+    resultado = bool(re.search(patron, cp))
+
+    if resultado:
+        print("Ok")
+    else:
+        print("El código postal ingresado no es correcto")
